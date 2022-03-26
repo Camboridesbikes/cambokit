@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Camboridesbikes/cambokit/issues"
   },
-  "homepage": "https://github.com/Camboridesbikes/cambokit#readme"
+  "homepage": "https://github.com/Camboridesbikes/cambokit#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
 }

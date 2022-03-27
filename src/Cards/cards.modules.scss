@@ -1,0 +1,141 @@
+@use '../styles/breakpoints' as *;
+
+.CardDeck {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 70%;
+
+}
+
+.linkCard {
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.2s linear;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.99;
+    object-fit: cover;
+    clear:both;
+    // overflow: hidden;
+}
+// .linkCard::after,
+// .linkCard::before {
+//     content: "";
+//     display: table;
+// }
+// .linkCard::after{
+//     clear:both;
+// }
+
+.linkCard a {
+    display: block;
+    width: 100%;    
+    padding-bottom: 100%;
+
+}
+
+div.linkCard div.inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    /* background-color: #00000035; */
+    background-color: #00000090;
+    transition-duration: 1s;
+    transition: font-size 0s liner 1s, background-color 1s, scale 1s linear;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    /* width: fit-content; */
+}
+// div.linkCard div::before{
+//     content: "";
+//     display: table;
+// }
+// div.linkCard div::after{
+//     clear: both;
+// }
+
+div.linkCard div.inner .title {
+    font-size: 2.5em;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: color 1s, linear;
+}
+div.linkCard:hover {
+
+    transform: scale(1.05);
+}
+div.linkCard div.inner:hover {
+    /* background-color: #00000080; */
+    background-color: #00000035;
+
+}
+
+div.cardFooter {
+    display: flexbox;
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: lightGray;
+    padding-top: .3em;
+    padding-left: .3em;
+}
+
+p.tag{
+    margin: .3em .3em;
+    padding: .2em .4em;
+    transition: scale 1.5s linear;
+    color:rgb(42, 42, 42);
+    background-color: rgb(167, 224, 132);
+    border: solid rgb(167, 224, 132);
+    border-radius: 1em;
+}
+p.tag:hover{
+    
+    transform: scale(1.1);
+}
+
+
+@include sm() {
+    .CardDeck {
+        width: 95%;
+
+    }
+
+    .linkCard {
+        margin: 1.61%;
+    }
+    .linkCard {
+        padding: 1.61%;
+        width: 40%;
+    }
+    
+}
+@include md() {
+
+    .CardDeck {
+        font-size: 100%;
+        width: 70%;
+    }
+       
+}
+@include lg() {
+    .blogCard{
+        width: 30%;
+    }
+}

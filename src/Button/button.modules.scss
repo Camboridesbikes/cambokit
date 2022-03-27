@@ -1,0 +1,64 @@
+@use  '../styles/breakpoints' as *;
+
+button {    
+    border-color: #A7E084;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 1% 6.81%;
+    margin: .618em;
+    /* color: white; */
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.button{ 
+    background-color: #00000000;
+    transition-duration: .5s;
+}
+.button a, .button{
+    color:#A7E084; 
+}
+.button:hover{
+    /* background-color: #ffffff80; */
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button-alt{
+    background-color: #A7E084;
+    color: #fff;
+    text-shadow: #00000090 0 0 3px;
+    transition-duration: .5s;
+    margin: 3em;
+}
+.button-alt a{
+    color: #fff;
+    transition-duration: .5s;
+}
+.button-alt:hover, .button-alt a:hover {
+    transform: scale(1.1);
+}
+
+.button-alt2{ 
+    background-color: #00000000;
+    transition-duration: .5s;
+}
+.button-alt2 a, .button-alt2{
+    color:#A7E084; 
+}
+.button-alt2:hover{
+    background-color: #A7E08420;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,13 @@
+@use '../styles/breakpoints' as *;
+
+
+
+div.background{
+    position: relative;
+}
+
+div.inner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
